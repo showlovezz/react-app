@@ -1,12 +1,16 @@
 {
   "name": "react-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "How didn't use create-react-app to create react app ?",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
