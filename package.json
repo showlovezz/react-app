@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
-    "lint": "eslint --fix src/*.js"
+    "lint": "eslint src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "keywords": [],
   "author": "",
@@ -29,6 +34,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.21.5",
     "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.6",
+    "pre-commit": "^1.2.2",
     "webpack": "^5.10.2",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"
