@@ -9,7 +9,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      },
+      }
     ]
   },
   resolve: {
@@ -28,6 +28,7 @@ module.exports = {
   devServer: {
     inline: true,
     contentBase: './src',
-    port: 3000
-  },
+    port: 3000,
+    historyApiFallback: true
+  }
 }
